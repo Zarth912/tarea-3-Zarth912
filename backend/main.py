@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://llm-chatbot-ten.vercel.app"],  # Permite el frontend de React
+    allow_origins=["http://localhost:3000", "https://tarea-3-zarth9125.vercel.app/"],  # Permite el frontend de React
     allow_credentials=True,
     allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
     allow_headers=["*"],  # Permite todos los encabezados
