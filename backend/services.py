@@ -52,4 +52,11 @@ def fill_database():
 def retrieve_similar_fragments(query: str, top_k: int = 5) -> list:
     query_embedding = generate_embedding(query)
     similar_fragments = search_similar(query_embedding, top_k)
-    return similar_fragments
+    if not similar_fragments:
+        print("No se encontraron fragmentos relevantes para la pregunta.")
+    return similar_fragments or []
+
+if __name__ == "__main__":
+    print("Iniciando llenado de base de datos...")
+    fill_database()
+    print("Llenado de base de datos completado.")
