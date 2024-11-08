@@ -1,0 +1,23 @@
+/* src/components/Message.css */
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+.message.user {
+    background-color: #e0f7fa; /* Azul claro para mensajes del usuario */
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #e8eaf6; /* Gris claro para mensajes del bot */
+    align-self: flex-start;
+}
+
+.message img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
